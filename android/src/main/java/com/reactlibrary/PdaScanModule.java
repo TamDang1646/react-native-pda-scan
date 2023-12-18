@@ -37,7 +37,7 @@ public class PdaScanModule extends ReactContextBaseJavaModule {
             } else if (IDATA_SCAN_ACTION.equals(actionName)) {
               params.putString("code", intent.getStringExtra("value"));
             } else if (YBX_SCAN_ACTION.equals(actionName)) {
-              params.putString("code", intent.getStringExtra("barcode_string"));
+              params.putString("code", intent.getStringExtra("barocode_string"));
             } else if (PL_SCAN_ACTION.equals(actionName)) {
               byte[] barcode = intent.getByteArrayExtra("barcode");
               int barcodelen = intent.getIntExtra("length", 0);
